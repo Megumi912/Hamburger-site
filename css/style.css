@@ -518,9 +518,8 @@ li {
 @media screen and (min-width: 1200px) {
   .c-map {
     width: calc(100% - 367px);
-    height: 70vh;
     margin-right: 367px;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.4) 40%), url(/img/G-map.png);
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.4) 40%), url(/img/G-map.png);
   }
 }
 .c-map h2 {
@@ -546,7 +545,7 @@ li {
 }
 .c-map p {
   position: absolute;
-  padding: 122px 40px 0 40px;
+  padding: 122px 40px 40px 40px;
   width: 100%;
   height: 691px;
   font-size: 14px;
@@ -848,7 +847,6 @@ blockquote .c-blockquote a {
 @media screen and (min-width: 768px) {
   .l-mainMenu .p-takeOut {
     width: 100%;
-    height: 100vh;
   }
 }
 .l-mainMenu .p-takeOut h2 {
@@ -875,20 +873,19 @@ blockquote .c-blockquote a {
 .l-mainMenu .p-takeOut .p-takeout {
   position: absolute;
   width: 90%;
-  height: 163px;
   margin: 0 5%;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .l-mainMenu .p-takeOut .p-takeout dt {
   font-size: 22px;
   color: #3C2A10;
-  margin: 19px 216px 19px 10px;
+  padding: 20px;
 }
 .l-mainMenu .p-takeOut .p-takeout dd {
   font-size: 16px;
   font-weight: normal;
   color: #3C2A10;
-  margin: 0 14px 23px 10px;
+  padding: 0 15px 15px 15px;
 }
 .l-mainMenu .p-takeOut .p-takeout_first {
   bottom: 214px;
@@ -908,7 +905,6 @@ blockquote .c-blockquote a {
 @media screen and (min-width: 768px) {
   .l-mainMenu .p-eatIn {
     width: 100%;
-    height: 100vh;
     margin-left: 0;
   }
 }
@@ -936,20 +932,19 @@ blockquote .c-blockquote a {
 .l-mainMenu .p-eatIn .p-eatin {
   position: absolute;
   width: 90%;
-  height: 163px;
   margin: 0 5%;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .l-mainMenu .p-eatIn .p-eatin dt {
   font-size: 22px;
   color: #3C2A10;
-  margin: 19px 216px 19px 10px;
+  padding: 20px;
 }
 .l-mainMenu .p-eatIn .p-eatin dd {
   font-size: 16px;
   font-weight: normal;
   color: #3C2A10;
-  margin: 0 14px 23px 10px;
+  padding: 0 15px 15px 15px;
 }
 .l-mainMenu .p-eatIn .p-eatin_first {
   bottom: 214px;
