@@ -1,0 +1,59 @@
+
+/*タブレット版 最小*/
+$tb: 768px;
+@mixin tb {
+    @media screen and (min-width: $tb) {
+        @content;
+    }
+}
+/*PC版 最小*/
+$pc: 1200px;
+@mixin pc {
+    @media screen and (min-width: $pc) {
+        @content;
+    }
+}
+
+
+
+.c-serchform {
+    text-align: center;
+    // @include pc {
+    //     text-align: right;
+    //     margin-left: 31px;
+    //     margin-top: 67px;
+    // }
+    .c-serchform__space {
+        width: 230px;
+        height: 46px;
+        background-color: #ffffff;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        @include tb {
+            width: 396px;
+        }
+    }
+    .c-submit {
+        width: 78px;
+        height: 46px;
+        margin-left: 10px;
+        background-color: #F2EDE9;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        @include tb {
+            width: 136px;
+        }
+    }
+    // ----- 後で確認 虫眼鏡マーク----------      <---- ①確認！！
+    .font-awesome-solid-icon::placeholder {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+    }   
+    // --------------------------------
+}

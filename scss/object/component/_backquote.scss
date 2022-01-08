@@ -1,0 +1,47 @@
+
+/*タブレット版 最小*/
+$tb: 768px;
+@mixin tb {
+    @media screen and (min-width: $tb) {
+        @content;
+    }
+}
+/*PC版 最小*/
+$pc: 1200px;
+@mixin pc {
+    @media screen and (min-width: $pc) {
+        @content;
+    }
+}
+
+blockquote {
+    
+    background-color: #F5F5F5;
+    margin-bottom: 30px;
+    p {
+        width: 90%;
+        margin: 5%;
+        padding-top: 30px;
+        text-align: left;
+    }
+    .c-blockquote {
+        margin-left: 20px;
+        padding-bottom: 30px;
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
