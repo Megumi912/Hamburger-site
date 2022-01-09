@@ -874,6 +874,7 @@ blockquote .c-blockquote a {
   position: absolute;
   width: 90%;
   margin: 0 5%;
+  margin-bottom: 2%;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .l-mainMenu .p-takeOut .p-takeout dt {
@@ -888,7 +889,7 @@ blockquote .c-blockquote a {
   padding: 0 15px 15px 15px;
 }
 .l-mainMenu .p-takeOut .p-takeout_first {
-  bottom: 214px;
+  bottom: 160px;
 }
 .l-mainMenu .p-takeOut .p-takeout_second {
   bottom: 20px;
@@ -933,6 +934,7 @@ blockquote .c-blockquote a {
   position: absolute;
   width: 90%;
   margin: 0 5%;
+  margin-bottom: 2%;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .l-mainMenu .p-eatIn .p-eatin dt {
@@ -947,7 +949,7 @@ blockquote .c-blockquote a {
   padding: 0 15px 15px 15px;
 }
 .l-mainMenu .p-eatIn .p-eatin_first {
-  bottom: 214px;
+  bottom: 160px;
 }
 .l-mainMenu .p-eatIn .p-eatin_second {
   bottom: 20px;

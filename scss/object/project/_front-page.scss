@@ -59,8 +59,8 @@ $pc: 1200px;
         .p-takeout{
             position: absolute;
             width: 90%;
-            // height: 163px;
             margin: 0 5%;
+            margin-bottom: 2%;
             background-color: rgba($color: #fff, $alpha: 0.5);
             dt{
                 font-size: 22px;
@@ -74,7 +74,7 @@ $pc: 1200px;
                 padding: 0 15px 15px 15px;
             }
             &_first {
-                bottom: 214px;
+                bottom: 160px;
             }
             &_second {
                 bottom: 20px;
@@ -117,8 +117,8 @@ $pc: 1200px;
         .p-eatin {
             position: absolute;
             width: 90%;
-            // height: 163px;
             margin: 0 5%;
+            margin-bottom: 2%;
             background-color: rgba($color: #fff, $alpha: 0.5);
             dt{
                 font-size: 22px;
@@ -132,7 +132,7 @@ $pc: 1200px;
                 padding: 0 15px 15px 15px;
             }
             &_first {
-                bottom: 214px;
+                bottom: 160px;
             }
             &_second {
                 bottom: 20px;
