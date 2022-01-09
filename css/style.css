@@ -3,7 +3,6 @@ html {
   font-size: 100%;
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 body {
@@ -14,7 +13,6 @@ body {
   margin-left: auto;
   font-weight: 100;
   background-color: #FFFDFA;
-  height: 100%;
   margin: 0;
 }
 
@@ -25,6 +23,10 @@ a {
 
 li {
   list-style: none;
+}
+
+.wrapper {
+  position: relative;
 }
 
 /*タブレット版 最小*/
@@ -266,7 +268,7 @@ li {
 .l-main_articles p {
   font-family: "m-plus-1m";
   font-size: 16px;
-  margin-bottom: 34px;
+  padding-bottom: 34px;
 }
 .l-main_articles h3 {
   margin-bottom: 31px;
@@ -327,6 +329,7 @@ li {
   transition: all 0.6s;
   padding-top: 40px;
   width: 328px;
+  height: 100%;
   z-index: 200;
   top: 0;
   right: -328px;
