@@ -18,14 +18,14 @@ $pc: 1200px;
 
 .c-serchform {
     text-align: center;
-    // @include pc {
-    //     text-align: right;
-    //     margin-left: 31px;
-    //     margin-top: 67px;
-    // }
     .c-serchform__space {
         width: 230px;
         height: 46px;
+        text-indent: 2.5em;
+        background-image: url(/img/search_01.png);
+        background-repeat: no-repeat;
+        background-position: 8px center;
+        background-size: auto 60%;
         background-color: #ffffff;
         border: 1px solid #707070;
         border-radius: 10px;
@@ -46,14 +46,22 @@ $pc: 1200px;
             width: 136px;
         }
     }
-    // ----- 後で確認 虫眼鏡マーク----------      <---- ①確認！！
-    .font-awesome-solid-icon::placeholder {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        display: inline-block;
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-    }   
+    // ----- 後で確認 虫眼鏡マーク----------  
+    // .font-awesome-solid-icon::placeholder {
+    //     font-family: "Font Awesome 5 Free";
+    //     font-weight: 900;
+    //     // display: inline-block;
+    //     font-style: normal;
+    //     font-variant: normal;
+    //     text-rendering: auto;
+    // }   
     // --------------------------------
 }
+
+
+
+
+
+
+
+
