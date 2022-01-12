@@ -1,33 +1,17 @@
+@use "../../foundation/mixin";
 
-/*タブレット版 最小*/
-$tb: 768px;
-@mixin tb {
-    @media screen and (min-width: $tb) {
-        @content;
-    }
-}
-/*PC版 最小*/
-$pc: 1200px;
-@mixin pc {
-    @media screen and (min-width: $pc) {
-        @content;
-    }
-}
-
-// ----- サイドバー ------------
-
-.l-sidebar_navlink {
-    position: absolute;
+.p-sidebar_navlink {
+    position: fixed;
     transition: all .6s;
     padding-top: 40px;
     width: 328px;
     height: 100%;
     z-index: 200;
     top: 0;
-    right: -328px;
+    right: -100%;
     background-color: #F2EDE9;
-    display: none;
-    @include pc {
+    @include mixin.pc {
+        position: absolute;
         width: 367px;
         top: 0;
         right: 0;
@@ -37,9 +21,7 @@ $pc: 1200px;
 }
 
 
-
-
-.l-navttl {
+.p-navttl {
     display: block;
     font-size: 24px;
     font-weight: bold;
@@ -54,7 +36,7 @@ $pc: 1200px;
     }
 }
 
-.l-sublink{
+.p-sublink{
     margin-left: 66px;
     text-align: left;
     li {
@@ -69,7 +51,7 @@ $pc: 1200px;
 
 // ----- サイドメニュー背景 --------------
 
-.l-sidebar_bg {
+.p-sidebar_bg {
     opacity: 0;
     transition: all .6s;
     width: 100vw;
@@ -85,7 +67,7 @@ $pc: 1200px;
 
 // ----- ボタンを押した時の動作 --------------
 
-.nav_open .l-sidebar_navlink {
+.nav_open .p-sidebar_navlink {
     position: absolute;
     transition: all .6s;
     overflow-y: auto;
@@ -93,17 +75,15 @@ $pc: 1200px;
     width: 328px;
     z-index: 200;
     top: 0;
-    right: -375px;
     background-color: #F2EDE9;
-    display: inherit;
 }
 
 
-.nav_open .l-sidebar .l-sidebar_navlink {
+.nav_open .p-sidebar .p-sidebar_navlink {
     right: 0; 
 }
 
-.nav_open .l-sidebar_bg {
+.nav_open .p-sidebar_bg {
     opacity: .8;
     visibility: visible;
 }

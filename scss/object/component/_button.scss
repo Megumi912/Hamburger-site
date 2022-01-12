@@ -1,18 +1,4 @@
-
-/*タブレット版 最小*/
-$tb: 768px;
-@mixin tb {
-    @media screen and (min-width: $tb) {
-        @content;
-    }
-}
-/*PC版 最小*/
-$pc: 1200px;
-@mixin pc {
-    @media screen and (min-width: $pc) {
-        @content;
-    }
-}
+@use "../../foundation/mixin";
 
 // ----- SP版サイドバー出すボタン ---------
 
@@ -23,7 +9,7 @@ $pc: 1200px;
     font-weight: 700;
     font-size: 20px;
     z-index: 200;
-    @include pc {
+    @include mixin.pc {
         visibility: hidden;
     }
 } 
@@ -36,7 +22,7 @@ $pc: 1200px;
     font-size: 24px;
     z-index: 200;
     visibility: hidden;
-    @include pc {
+    @include mixin.pc {
         visibility: visible;
     }
 }
@@ -95,17 +81,7 @@ $pc: 1200px;
 
 
 
-// ----- ページネーションボタン ----------
-.c-pagenation {
-    @include pc {
-        margin-right: 367px;
-    }
-    &_list {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 20.2px;
-    }
-}
+
 
 
 

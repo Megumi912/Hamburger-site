@@ -17,19 +17,19 @@
         <header class="l-header">
             <h1><a href="index.html">Hamburger</a></h1>
             <form class="c-serchform">
-                <input class="c-serchform__space font-awesome-solid-icon" type="text" placeholder="　&#xf002;">
+                <input class="c-serchform__space font-awesome-solid-icon" type="text">
                 <input type="submit" class="c-submit" value="検索"></input>
             </form>
         </header>
         
         <!-- サイドバー -->
         <section>
-            <div class="l-sidebar">
+            <div class="p-sidebar">
                 <nav>
-                    <ul class="l-sidebar_navlink">
-                        <li class="l-navlink_menu">
-                            <a href="archive.html" class="l-navttl navttl_1">バーガー</a>
-                            <div class="l-sublink sublink_1">
+                    <ul class="p-sidebar_navlink">
+                        <li class="p-navlink_menu">
+                            <a href="archive.html" class="p-navttl navttl_1">バーガー</a>
+                            <div class="p-sublink sublink_1">
                                 <ul>
                                     <li><a href="single.html">ハンバーガー</a></li>
                                     <li><a href="#">チーズバーガー</a></li>
@@ -42,9 +42,9 @@
                             </div>
                         </li>
                         
-                        <li class="l-navlink_menu">
-                            <a href="#" class="l-navttl navttl_2">サイド</a>
-                            <div class="l-sublink sublink_2">
+                        <li class="p-navlink_menu">
+                            <a href="#" class="p-navttl navttl_2">サイド</a>
+                            <div class="p-sublink sublink_2">
                                 <ul>
                                     <li><a href="#">ポテト</a></li>
                                     <li><a href="#">サラダ</a></li>
@@ -54,9 +54,9 @@
                             </div>
                         </li>
                         
-                        <li  class="l-navlink_menu">
-                            <a href="#" class="l-navttl navttl_3">ドリンク</a>
-                            <div class="l-sublink sublink_3">
+                        <li  class="p-navlink_menu">
+                            <a href="#" class="p-navttl navttl_3">ドリンク</a>
+                            <div class="p-sublink sublink_3">
                                 <ul>
                                     <li><a href="#">コーラ</a></li>
                                     <li><a href="#">ファンタ</a></li>
@@ -80,7 +80,7 @@
             <span class="hamburger_line hamburger_line1"></span>
             <span class="hamburger_line hamburger_line2"></span>
         </div>
-        <div class="l-sidebar_bg" id="l-sidebar_bg"></div>
+        <div class="p-sidebar_bg" id="p-sidebar_bg"></div>
         
         <!------------- ここまで全ページ共通（sp版） ------------------------------------------------>
         
@@ -96,7 +96,7 @@
         
         
         <!-- バーガーメニュー -->
-        <main class="l-main_wrapper">
+        <main class="p-main_wrapper">
             <h2>小見出しが入ります</h2>
             <p> 
                 テキストが入ります。テキストが入ります。
@@ -154,9 +154,25 @@
         
         <section class="c-pagenation">
             <ul class="c-pagenation_list">
-                <li>〈〈 前へ</li>
-                <li>次へ 〉〉</li>
+                <li>≪ 前へ</li>
+                <li>次へ ≫</li>
             </ul>
+            <div class="c-pagenation_list-tb">
+                <span>page 1/10</span>
+                <span>≪</span>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                </ul>
+                <span>≫</span>
+            </div>
         </section>
     </div>
     <!-------------- ここからフッター共通 ------------------------------->

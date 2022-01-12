@@ -1,25 +1,34 @@
+@use "../../foundation/mixin";
 
+// ----- archive.html ----------------------------
+// ----- メニューデザイン -----------
+.p-main_wrapper {
+    color: #3C2A10;
+    margin: 5%;
+    @include mixin.pc {
+        width: calc(95% - 367px);
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 2.5%;
 
-/*タブレット版 最小*/
-$tb: 768px;
-@mixin tb {
-    @media screen and (min-width: $tb) {
-        @content;
+    }
+    h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    p {
+        width: 100%;
+        font-size: 16px;
     }
 }
-/*PC版 最小*/
-$pc: 1200px;
-@mixin pc {
-    @media screen and (min-width: $pc) {
-        @content;
-    }
-}
+
 
 // ----- ハンバーガーメニューリスト --------
 .p-articles_menuList {
     text-align: center;
     margin-bottom: 60.4px;
-    @include pc {
+    @include mixin.pc {
             width: calc(95% - 367px);
             margin-left: 2.5%;
         }
@@ -29,17 +38,17 @@ $pc: 1200px;
         margin-left: 20px;
         margin-right: 18.9px;
         margin-bottom: 20.9px;
-        @include tb {
+        @include mixin.tb {
             display: flex;
         }
         .p-articles_img {
-            @include tb {
+            @include mixin.tb {
                 width: 50%;
             }
             img {
                 width: 100%;
                 object-fit: cover;
-                @include tb {
+                @include mixin.tb {
                     height: 100%;
                     margin-bottom: 0;
                 }
@@ -47,7 +56,7 @@ $pc: 1200px;
         }
         .p-articles_text {
             text-align: center;
-            @include tb {
+            @include mixin.tb {
                 width: 50%;
             }
             h3 {
@@ -77,6 +86,47 @@ $pc: 1200px;
 
 
 // ----- single.html ------------------------
+// ----- 記事内部 -------
+
+.p-main_articles {
+    color: #3C2A10;
+    margin: 0 20px;
+    @include mixin.tb {
+        margin: 0 60px;
+    }
+    @include mixin.pc {
+        width: calc(95% - 407px);
+    }
+
+    h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-family: 'm-plus-1m';
+        font-size: 16px;
+        padding-bottom: 34px;
+        // margin-bottom: 34px;
+    }
+    h3 {
+        margin-bottom: 31px;
+        font-size: 24px;
+    }
+    h4 {
+        margin-bottom: 37px;
+        font-size: 20px;
+    }
+    h5 {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    h6 {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+}
 
 
 .p-alticles{
@@ -108,7 +158,7 @@ $pc: 1200px;
         height: 176px;
         overflow: hidden;
         margin-left: 5%;
-        @include tb {
+        @include mixin.tb {
             height: auto;
         }
         p {
@@ -120,7 +170,7 @@ $pc: 1200px;
         height: 176px;
         overflow: hidden;
         margin-right: 5%;
-        @include tb {
+        @include mixin.tb {
             height: auto;
         }
         p {
@@ -133,7 +183,7 @@ $pc: 1200px;
         img {
             width: 80%;
             height: auto;
-            @include pc {
+            @include mixin.pc {
                 width: 60%;
             }
         }
@@ -141,21 +191,21 @@ $pc: 1200px;
     &_pic_culum {
         text-align: center;
         margin: 0 auto;
-        @include tb {
+        @include mixin.tb {
             display: flex;
             flex-wrap: wrap;
         }
         img {
             width: 100%;
             margin-bottom: 20px;
-            @include tb {
+            @include mixin.tb {
                 width: 48%;
                 margin-left: 2%;
                 &:nth-child(odd) {
                     margin-left: 0;
                 }
             }
-            @include pc {
+            @include mixin.pc {
                 width: 32%;
                 margin-left: 2%;
                 &:nth-child(odd) {

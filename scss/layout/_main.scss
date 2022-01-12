@@ -1,30 +1,13 @@
-
-
-/*タブレット版 最小*/
-$tb: 768px;
-@mixin tb {
-    @media screen and (min-width: $tb) {
-        @content;
-    }
-}
-/*PC版 最小*/
-$pc: 1200px;
-@mixin pc {
-    @media screen and (min-width: $pc) {
-        @content;
-    }
-}
+@use "../foundation/mixin";
 
 // ----- index.html ---------------------------------
-
-// ----- 上部レイヤー -----
 .l-toplayer {
     width: 100%;
     height: 285px;
     background-image: url(/img/pc_Top.png);
     background-size: cover;
     background-position: 50%;
-    @include pc {
+    @include mixin.pc {
         width: calc(100% - 367px);
         height: 500px;
     }
@@ -33,23 +16,20 @@ $pc: 1200px;
         font-size: 2.2rem;
         line-height: 285px;
         margin-left: 30px;
-        @include pc {
+        @include mixin.pc {
             line-height: 500px;
         }
     }
 }
 
-
 // ----- archive.html ----------------------------
-
-// ----- 上部レイヤー -----
 .l-toplayer_archive {
     width: 100%;
     height: 285px;
     background-color: #000;
     background-size: cover;
     position: relative;
-    @include pc {
+    @include mixin.pc {
         width: calc(100% - 367px);
         height: 230px;
     }
@@ -58,7 +38,7 @@ $pc: 1200px;
         top: 102px;
         left: 30px;
         color: #fff;
-        @include tb {
+        @include mixin.tb {
             display: flex;
         }
         h2 {
@@ -67,7 +47,7 @@ $pc: 1200px;
         p {
             font-size: 16px;
             margin-top: 7px;
-            @include tb {
+            @include mixin.tb {
                 margin-top: 14px;
                 margin-left: 15px;
             }
@@ -85,44 +65,17 @@ $pc: 1200px;
     }
 }
 
-
-// ----- メニューデザイン -----------
-.l-main_wrapper {
-    color: #3C2A10;
-    margin: 5%;
-    @include pc {
-        width: calc(95% - 367px);
-        margin-top: 60px;
-        margin-bottom: 60px;
-        margin-left: 2.5%;
-
-    }
-    h2 {
-        font-size: 28px;
-        font-weight: bold;
-        margin-bottom: 30px;
-    }
-    p {
-        width: 100%;
-        font-size: 16px;
-    }
-}
-
-
 // ----- single.html --------------------------------
-
-// ----- 上部レイヤー -----
-
 .l-toplayer_single {
     width: 100%;
     height: 225px;
     background-image: url(/img/single_Top2.png);
     background-size: cover;
     position: relative;
-    @include tb {
+    @include mixin.tb {
         height: 500px;
     }
-    @include pc {
+    @include mixin.pc {
         width: calc(100% - 367px);
     }
     .l-toplayer_singlefont {
@@ -130,7 +83,7 @@ $pc: 1200px;
         top: 91px;
         left: 26px;
         color: #fff;
-        @include tb {
+        @include mixin.tb {
             top: 0;
             left: 60px;
             line-height: 500px;
@@ -141,64 +94,18 @@ $pc: 1200px;
     }
 }
 
-
-// ----- 記事内部 -------
-
-.l-main_articles {
-    color: #3C2A10;
-    margin: 0 20px;
-    @include tb {
-        margin: 0 60px;
-    }
-    @include pc {
-        width: calc(95% - 407px);
-    }
-
-    h2 {
-        font-size: 28px;
-        font-weight: bold;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    p {
-        font-family: 'm-plus-1m';
-        font-size: 16px;
-        padding-bottom: 34px;
-        // margin-bottom: 34px;
-    }
-    h3 {
-        margin-bottom: 31px;
-        font-size: 24px;
-    }
-    h4 {
-        margin-bottom: 37px;
-        font-size: 20px;
-    }
-    h5 {
-        margin-bottom: 30px;
-        font-size: 20px;
-    }
-    h6 {
-        margin-bottom: 30px;
-        font-size: 20px;
-    }
-}
-
-// ----- page.html -----
-
-// ----- 上部レイヤー -----
-
+// ----- page.html --------------------------------------
 .l-toplayer_page {
     width: 100%;
     height: 225px;
     background-image: url(/img/pageTop2.png);
     background-size: cover;
     position: relative;
-    @include tb {
+    @include mixin.tb {
         background-position: 50% 50%;
         height: 500px;
     }
-    @include pc {
+    @include mixin.pc {
         width: calc(100% - 367px);
     }
     .l-toplayer_pagefont {
@@ -206,7 +113,7 @@ $pc: 1200px;
         top: 91px;
         left: 45px;
         color: #fff;
-        @include tb {
+        @include mixin.tb {
             top: 0;
             left: 60px;
             line-height: 500px;

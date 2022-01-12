@@ -1,20 +1,4 @@
-
-/*タブレット版 最小*/
-$tb: 768px;
-@mixin tb {
-    @media screen and (min-width: $tb) {
-        @content;
-    }
-}
-/*PC版 最小*/
-$pc: 1200px;
-@mixin pc {
-    @media screen and (min-width: $pc) {
-        @content;
-    }
-}
-
-
+@use "../foundation/mixin";
 
 .l-header {
     position: relative;
@@ -24,34 +8,22 @@ $pc: 1200px;
     background-color: #FFF7EF;
     flex-direction: column;
     text-align: center;
+    @include mixin.pc {
+        width: calc(100% - 367px);
+        margin-right: 367px;
+    }
     h1 {
         font-size: 40px;
         margin: 40px 86px;
-    }
-}
-
-@include pc {
-    .l-header {
-        width: calc(100% - 367px);
-        margin-right: 367px;
-        h1 {
+        @include mixin.pc {
             display: inline;
             position: absolute;
             top: 86px;
             left: 65px;
             margin: 0;
-
-        }
-        .c-serchform {
-            display: inline;
-            position: absolute;
-            top: 86px;
-            right: 31px;
         }
     }
 }
-
-
 
 
 
