@@ -750,7 +750,9 @@ blockquote .c-blockquote a {
   }
 }
 .p-mainMenu .p-takeOut {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 90%;
   padding: 2%;
   margin: 8% 5%;
@@ -766,7 +768,7 @@ blockquote .c-blockquote a {
 .p-mainMenu .p-takeOut h2 {
   position: relative;
   font-size: 41px;
-  margin-bottom: 100vh;
+  margin-bottom: 200px;
   color: #EAEAEA;
 }
 .p-mainMenu .p-takeOut h2::before {
@@ -802,8 +804,10 @@ blockquote .c-blockquote a {
   bottom: 20px;
 }
 .p-mainMenu .p-eatIn {
-  position: relative;
-  width: 90% px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
   padding: 2%;
   margin: 8% 5%;
   background-size: cover;
@@ -818,7 +822,7 @@ blockquote .c-blockquote a {
 }
 .p-mainMenu .p-eatIn h2 {
   position: relative;
-  margin-bottom: 100vh;
+  margin-bottom: 200px;
   font-size: 41px;
   color: #EAEAEA;
 }

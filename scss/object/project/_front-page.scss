@@ -12,7 +12,10 @@
         margin-right: 367px;
     }
     .p-takeOut {
-        position: relative;
+        // position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 90%;
         padding: 2%;
         margin: 8% 5%;
@@ -65,8 +68,11 @@
     // ----- イートイン ------------------------
     
     .p-eatIn {
-        position: relative;
-        width: 90%px;
+        // position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
         padding: 2%;
         margin: 8% 5%;
         background-size: cover;
