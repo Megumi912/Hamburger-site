@@ -423,6 +423,11 @@ blockquote .c-blockquote a {
     width: 396px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .c-serchform .c-serchform__space {
+    width: 350px;
+  }
+}
 .c-serchform .c-submit {
   width: 78px;
   height: 46px;
@@ -761,7 +766,7 @@ blockquote .c-blockquote a {
 .p-mainMenu .p-takeOut h2 {
   position: relative;
   font-size: 41px;
-  margin-bottom: 200px;
+  margin-bottom: 100vh;
   color: #EAEAEA;
 }
 .p-mainMenu .p-takeOut h2::before {
@@ -813,7 +818,7 @@ blockquote .c-blockquote a {
 }
 .p-mainMenu .p-eatIn h2 {
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 100vh;
   font-size: 41px;
   color: #EAEAEA;
 }

@@ -22,6 +22,9 @@
         @include mixin.tb {
             width: 396px;
         }
+        @include mixin.pc {
+            width: 350px;
+        }
     }
     .c-submit {
         width: 78px;
